@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    $(document).ready(() => {
+      $(window).on("resize", () => {
+        const $wrapper = $(".content-wrapper");
+        const bbox = $wrapper[0].getBoundingClientRect();
+
+        $wrapper.height($(window).height() - bbox.top);
+      });
+
+      $(window).trigger("resize");
+    });
+  </script>
+
+  <style>
+    .main {
+      position: relative;
+      width: 100%;
+    }
+
+    .nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150px;
+      bottom: 0;
+    }
+
+    .nav-wrapper {
+      background-color: lightblue;
+    }
+
+    .content {
+      position: absolute;
+      top: 0;
+      left: 150px;
+      right: 0;
+      bottom: 0;
+      overflow: auto;
+    }
+
+    .content-wrapper {
+      background-color: lightgrey;
+    }
+  </style>
+
+  <body>
+    <div class="header">header</div>
+    <div class="main">
+      <div class="nav">
+        <div class="nav-wrapper">nav</div>
+      </div>
+      <div class="content" style="overflow: visible">
+        <div class="content-wrapper" style="overflow: auto">
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+          main
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
